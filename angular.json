@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularJS10-Clase02"
+    }
+  },
+  "defaultProject": "AngularJS10-Clase02",
+  "cli": {
+    "analytics": "5f193b89-c699-4ba6-93f0-c4b830807dda"
+  }
 }

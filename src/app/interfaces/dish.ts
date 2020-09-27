@@ -1,2 +1,6 @@
-export interface Dish {
+import { Ingredient } from './ingredient';
+
+export interface Dish{
+    name: string;
+    ingredients: Ingredient[];
 }

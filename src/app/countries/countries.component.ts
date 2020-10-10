@@ -10,10 +10,11 @@ import { UpperCasePipe } from '@angular/common';
 })
 export class CountriesComponent implements OnInit {
   selected: Country;
+  total: 123456.789123;
   constructor(private upperCasePipe: UpperCasePipe) {
     //console.log(countries);
     this.selected = countries[10];
-    console.log(this.selected);
+    //console.log(this.selected);
   }
 
   ngOnInit(): void {}

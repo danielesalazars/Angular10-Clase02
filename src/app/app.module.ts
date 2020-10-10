@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { OrderComponent } from './order/order.component';
 import { DishComponent } from './dish/dish.component';
 import { CountriesComponent } from './countries/countries.component';
+import { FilesizePipe } from '@app/pipes';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,11 @@ import { CountriesComponent } from './countries/countries.component';
     MenuComponent,
     OrderComponent,
     DishComponent,
-    CountriesComponent
+    CountriesComponent,
+    FilesizePipe,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,38 +1,39 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Dish } from '../interfaces/dish';
-import { Ingredient } from '../interfaces/ingredient';
+import * as dishes from './../../assets/dishes.json';
+import { Dish } from '@app/models';
 
 @Component({
   selector: 'app-dish',
   templateUrl: './dish.component.html',
-  styleUrls: ['./dish.component.scss']
+  styleUrls: ['./dish.component.scss'],
 })
 export class DishComponent implements OnInit {
-  private _name: string;
-  private _ingredients: Array<Ingredient>;
-  private _totalIngredient: number;
+  _name: string;
+  //private _name: string;
+  //private _ingredients: Array<Dish>;
+  //private _totalIngredient: number;
 
-  @Input() set dish(value: Dish){
+  @Input() set dish(value: Dish) {
     this._name = value.name;
-    this._ingredients = value.ingredients;
-    this._totalIngredient = value.ingredients.length;
-  };
-
-  constructor() { }
-
-  ngOnInit(): void {
+    //this._ingredients = value.ingredients;
+    //this._totalIngredient = value.ingredients.length;
   }
 
-  get name(): string{
+  constructor() {
+    console.log(this._name);
+  }
+
+  ngOnInit(): void {}
+
+  get name(): string {
     return this._name;
   }
 
-  get ingredients(): Array<Ingredient>{
+  /*get ingredients(): Array<Ingredient> {
     return this._ingredients;
   }
-  
-  get totalIngredient(): number{
+
+  get totalIngredient(): number {
     return this._totalIngredient;
-  }
-  
+  }*/
 }

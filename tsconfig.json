@@ -15,7 +15,8 @@
     "lib": ["es2018", "dom"],
     "resolveJsonModule": true,
     "paths": {
-      "@app/models": ["src/app/interfaces"]
+      "@app/models": ["src/app/interfaces"],
+      "@app/pipes": ["src/app/pipes"]
     }
   }
 }

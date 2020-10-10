@@ -1,2 +1,11 @@
 <h1>{{ name }}</h1>
+
+<div [ngSwitch]="spicy">
+  <p *ngSwitchCase="0" [ngStyle]="{ background: 'blue' }">Color 0</p>
+  <p *ngSwitchCase="1" [ngStyle]="{ background: 'blue' }">Color 1</p>
+  <p *ngSwitchCase="2" [ngStyle]="{ background: 'red' }">Color 2</p>
+  <p *ngSwitchCase="3" [ngStyle]="{ background: 'red' }">Color 3</p>
+  <p *ngSwitchCase="4" [ngStyle]="{ background: 'red' }">Color 4</p>
+  <p *ngSwitchDefault></p>
+</div>
 <h3>Ingredientes:</h3>

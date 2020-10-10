@@ -8,6 +8,7 @@ export interface Dish {
   category: string;
   price: number;
   stock: boolean;
+  spicy: number;
   inventoryStatus: string;
   image: string;
 }

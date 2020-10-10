@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as countries from './../../assets/countries.json';
-import { Country } from '../interfaces/country';
+import { Country } from '@app/models';
 @Component({
   selector: 'app-countries',
   templateUrl: './countries.component.html',
